@@ -48,13 +48,10 @@ function playRound(playerSelection, computerSelection) {
 
 function playGame() {
 
-    
+    for(i = 0; i < 5; i++)
+    {
         playRound(playerSelection, computerSelection);
-        playRound(playerSelection, computerSelection);
-        playRound(playerSelection, computerSelection);
-        playRound(playerSelection, computerSelection);
-        playRound(playerSelection, computerSelection);
-    
+    }
     if(playerWins >= 3) {
         return "Player Wins!";
     }
